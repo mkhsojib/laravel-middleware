@@ -19,10 +19,31 @@ class HomeController extends Controller
     /**
      * Show the application dashboard.
      *
-     * @return \Illuminate\Http\Response
+     * @return array
      */
-    public function index()
+    public function index(Request $request)
     {
-        return view('home');
+//        $request->session()->put(['sojib' => 'web developer']);
+
+//        session(['sojib'=>'developer']);
+//
+//        return session('sojib');
+
+//        $request->session()->forget('sojib');
+
+//        $request->session()->flush();
+//
+//        return $request->session()->all();
+
+
+//        $request->session()->flash('message', 'post has been created');
+
+//        return $request->session()->get('message');
+//
+//        $request->session()->reflash();
+//
+//        $request->session()->keep('message');
+
+//        return view('home');
     }
 }
