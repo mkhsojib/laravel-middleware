@@ -14,3 +14,15 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::get('/admin/user/roles', ['middleware' => ['role', 'auth', 'web'], function () {
+
+    return "this is role user";
+
+
+}]);
